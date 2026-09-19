@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact and student feedback form for our Web Systems and Technology team.">
+    <title>Contact Us - Team Web Project</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Web Systems &amp; Technology Team Project</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Contact &amp; Student Feedback</h1>
+
+    <form action="#" method="POST">
+
+        <!-- 1. Full Name -->
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name"
+               placeholder="Enter your full name" required>
+
+        <!-- 2. Email -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"
+               placeholder="example@email.com" required>
+
+        <!-- 3. Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"
+               placeholder="Enter password" required>
+
+        <!-- 4. Radio Buttons -->
+        <fieldset>
+            <legend>Your Role:</legend>
+
+            <label>
+                <input type="radio" name="role" value="student" required>
+                Student
+            </label>
+
+            <label>
+                <input type="radio" name="role" value="teacher">
+                Teacher
+            </label>
+
+            <label>
+                <input type="radio" name="role" value="visitor">
+                Visitor
+            </label>
+        </fieldset>
+
+        <!-- 5. Checkboxes -->
+        <fieldset>
+            <legend>Interests:</legend>
+
+            <label>
+                <input type="checkbox" name="interest" value="html">
+                HTML
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="css">
+                CSS
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="web-development">
+                Web Development
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="github">
+                GitHub
+            </label>
+        </fieldset>
+
+        <!-- 6. Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"
+                  rows="5"
+                  placeholder="Write your message or feedback here..."
+                  required></textarea>
+
+        <!-- 7. Dropdown -->
+        <label for="category">Subject Category:</label>
+
+        <select id="category" name="category" required>
+            <option value="">-- Select a category --</option>
+            <option value="website">Website Feedback</option>
+            <option value="html">HTML Question</option>
+            <option value="project">Project Feedback</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- 8. Submit and Reset -->
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Web Systems &amp; Technology Team Project</p>
+    <p>Created by BSIT Students - Occidental Mindoro State University</p>
+</footer>
+
+</body>
+  </html>
